@@ -13,4 +13,26 @@
     .navbar-collapse {
         justify-content: center;
     }
+    @media (max-width:910px) {
+        img{
+            width: 125px;
+            height: 100%;
+        }
+        
+    }
+
+    @media (max-width:600px) {
+        img{
+            width: 100px;
+            height: 100%;
+        }
+        
+    }
+    @media (max-width: 414px){
+        img{
+            width: 75px;
+            height: 100%;
+        
+        }
+    }
 }

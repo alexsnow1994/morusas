@@ -2,16 +2,44 @@
      margin: 0;
      padding: 0;
  }
- 
- //  .container-fluid {
- //      //background-color: $color_principal;
- //      justify-content: center;
- //      .pie {
- //          justify-content: center;
- //      }
- //      img {
- //          width: 100px;
- //          height: 80%;
- //          // bottom: 10px;
- //      }
- //  }
+ @media (max-width:750px ) {
+     .container-fluid .pie{
+         justify-content: center;
+         align-items: center;
+     }
+     
+ }
+
+  .container-fluid .pie {
+      //background-color: $color_principal;
+      //justify-content: center;
+      align-items: center;
+      
+      img {
+          width: 100px;
+          height: 80%;
+          // bottom: 10px;
+      }
+      @media (max-width:910px) {
+        img{
+            width: 125px;
+            height: 100%;
+        }
+        
+    }
+
+    @media (max-width:600px) {
+        img{
+            width: 100px;
+            height: 100%;
+        }
+        
+    }
+    @media (max-width: 414px){
+        img{
+            width: 75px;
+            height: 100%;
+        
+        }
+    }
+  }
