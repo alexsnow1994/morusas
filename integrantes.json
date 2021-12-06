@@ -1,0 +1,31 @@
+{
+    "integrantes": {
+        "305": {
+            "nombre": "david: morales",
+            "profesion":"ingeniero mecanico",
+            "trabajo":"testing TATA",
+            "funcion": "desarrolador"
+        },
+
+        "306": {
+            "nombre":"alejandro estrada",
+            "profesion":"ingeniero Electrico",
+            "trabajo":"pryectos pararrayos",
+            "funcion": "desarrollo de pagina"
+        },
+        "307": {
+            "nombre":"fundador",
+            "profesion":"lic en fisica",
+            "trabajo":"..",
+            "funcion": ".."
+
+        },
+        "308": {
+            "nombre":"..",
+            "profesion": "..",
+            "trabajo": ".."
+        }
+
+    }   
+
+}

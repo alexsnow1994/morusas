@@ -1,22 +1,16 @@
 .header {
-
     margin: 0%;
     padding: 0%;
 }
-.container-fluid {
-    background-color: $color_principal;
-    font-size: 20px;
-    
-    
-     img{  
-       width: 100px;
+
+.Nav .container-fluid {
+    background: linear-gradient(top, blue, red);
+    font-size: 25px;
+    img {
+        width: 150px;
         height: 100%;
-        
     }
-    
-    .navbar-collapse{
-        justify-content: flex-end;
+    .navbar-collapse {
+        justify-content: center;
     }
-
-
 }
