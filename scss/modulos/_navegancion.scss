@@ -1,38 +1,39 @@
 .header {
     margin: 0%;
     padding: 0%;
-}
-
-.Nav .container-fluid {
-    background: linear-gradient(top, blue, red);
-    font-size: 25px;
-    img {
-        width: 150px;
-        height: 100%;
-    }
-    .navbar-collapse {
-        justify-content: center;
-    }
-    @media (max-width:910px) {
-        img{
-            width: 125px;
-            height: 100%;
+    .Nav {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0.5466561624649859) 0%, rgba(106, 206, 241, 1) 100%);
+        font-size: 25px;
+        .container p {
+            text-align: center;
         }
-        
-    }
-
-    @media (max-width:600px) {
-        img{
-            width: 100px;
+        img {
+            width: 150px;
             height: 100%;
+            border-radius: 10px;
         }
-        
-    }
-    @media (max-width: 414px){
-        img{
-            width: 75px;
-            height: 100%;
-        
+        .navbar-collapse {
+            justify-content: center;
+        }
+        @media (max-width:910px) {
+            img {
+                width: 125px;
+                height: 100%;
+                border-radius: 60px;
+            }
+        }
+        @media (max-width:600px) {
+            img {
+                width: 100px;
+                height: 100%;
+            }
+        }
+        @media (max-width: 414px) {
+            img {
+                width: 75px;
+                height: 100%;
+            }
         }
     }
 }
