@@ -14,19 +14,8 @@
             // Get Video Information
             var fitVid = fitVids[i];
             var width = fitVid.getAttribute("width");
-            var height = fitVid.getAttribute("height");
-            var aspectRatio = height / width;
-            var parentDiv = fitVid.parentNode;
-
-            // Wrap it in a DIV
-            var div = document.createElement("div");
-            div.className = "fitVids-wrapper";
-            div.style.paddingBottom = aspectRatio * 100 + "%";
-            parentDiv.insertBefore(div, fitVid);
-            fitVid.remove();
-            div.appendChild(fitVid);
-
-            // Clear height/width from fitVid
+            background: rgb(2, 0, 36);
+            //  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0.5466561624649859) 0%, rgba(106, 206, 241, 1) 100%);
             fitVid.removeAttribute("height");
             fitVid.removeAttribute("width");
         }
