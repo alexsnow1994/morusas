@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -6,32 +7,32 @@
 .pr {
   border: solid 4px black; }
 
-.header {
+#header {
   margin: 0%;
   padding: 0%; }
-  .header .Nav {
+  #header .Nav {
     background: #020024;
     background: linear-gradient(90deg, #020024 0%, rgba(255, 255, 255, 0.5466561625) 0%, #6acef1 100%);
     font-size: 25px; }
-    .header .Nav .container p {
+    #header .Nav .container p {
       text-align: center; }
-    .header .Nav img {
+    #header .Nav img {
       width: 150px;
       height: 100%;
       border-radius: 10px; }
-    .header .Nav .navbar-collapse {
+    #header .Nav .navbar-collapse {
       justify-content: center; }
     @media (max-width: 910px) {
-      .header .Nav img {
+      #header .Nav img {
         width: 125px;
         height: 100%;
         border-radius: 60px; } }
     @media (max-width: 600px) {
-      .header .Nav img {
+      #header .Nav img {
         width: 100px;
         height: 100%; } }
     @media (max-width: 414px) {
-      .header .Nav img {
+      #header .Nav img {
         width: 75px;
         height: 100%; } }
 
@@ -108,7 +109,15 @@ footer {
   font-size: 70%; }
   .integrantes .btn img {
     width: 30px;
-    border: solid red 0.2px; }
+    border: solid red .2px; }
+
+#montañas {
+  justify-content: center;
+  text-align: center; }
+  #montañas tr td {
+    border: black solid; }
+  #montañas th {
+    border: black solid; }
 
 #galeria_de_talleres .container {
   border: solid 5px red; }

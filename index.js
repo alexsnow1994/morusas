@@ -1,23 +1,80 @@
-(function(window, document, undefined) {
-    "use strict";
+// let header = document.body.getElementsById("header")
+// let Encabezado = document.createElement("h1");
 
-    // List of Video Vendors embeds you want to support
-    var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+// let text = document.createTextNode("morusas es lo mejor")
 
-    // Select videos
-    var fitVids = document.querySelectorAll(players.join(","));
 
-    // If there are videos on the page...
-    if (fitVids.length) {
-        // Loop through videos
-        for (var i = 0; i < fitVids.length; i++) {
-            // Get Video Information
-            var fitVid = fitVids[i];
-            var width = fitVid.getAttribute("width");
-            background: rgb(2, 0, 36);
-            //  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0.5466561624649859) 0%, rgba(106, 206, 241, 1) 100%);
-            fitVid.removeAttribute("height");
-            fitVid.removeAttribute("width");
-        }
-    }
-})(window, document);
+// h1.appendChild(text)
+let data = [
+    { name: "Kilimanjaro", height: 5895, place: "Tanzania" },
+    { name: "Everest", height: 8848, place: "Nepal" },
+    { name: "Mount Fuji", height: 3776, place: "Japan" },
+    { name: "Vaalserberg", height: 323, place: "Netherlands" },
+    { name: "Denali", height: 6168, place: "United States" },
+    { name: "Popocatepetl", height: 5465, place: "Mexico" },
+    { name: "Mont Blanc", height: 4808, place: "Italy/France" }
+];
+
+
+// buildTable = (data) => {
+//     let table = document.createElement("table");
+//     let fields = Object.keys(data[0]);
+//     let headRow = document.createElement("tr");
+//     fields.forEach((fields) => {
+//         let headCell = crateElement("th")
+//         headCell.appendChild(document.createTextNode(fields));
+//         headRow.appendChild(headCell)
+//     });
+//     table.appendChild(headRow);
+
+//     data.forEach((object) => {
+//         let row = document.createElement("tr");
+//         fields.forEach((field) => {
+//             let cell = document.crateElement("td");
+//             cell.appendChild(document.createTextNode(object[field]))
+//             if (typeof object[field] == "number") {
+//                 cell.style.textAlagin = "rigth";
+//             }
+//             row.appendChild(cell);
+
+//         });
+//         table.appendChild(row);
+
+//     })
+//     return table;
+
+
+// }
+
+// document.getElementById("montañas")
+// montañas.appendchild(buildTable(data));
+function buildTable(data) {
+    var table = document.createElement("table");
+
+    var fields = Object.keys(data[0]);
+    var headRow = document.createElement("tr");
+    fields.forEach(function(field) {
+        var headCell = document.createElement("th");
+        headCell.appendChild(document.createTextNode(field));
+        headRow.appendChild(headCell);
+    });
+    table.appendChild(headRow);
+
+    data.forEach(function(object) {
+        var row = document.createElement("tr");
+        fields.forEach(function(field) {
+            var cell = document.createElement("td");
+            cell.appendChild(document.createTextNode(object[field]));
+            if (typeof object[field] == "number") {
+                cell.style.textAlign = "right";
+            }
+            row.appendChild(cell);
+        });
+        table.appendChild(row);
+    });
+
+    return table;
+}
+
+document.getElementById("montañas")
+    .appendChild(buildTable(data));

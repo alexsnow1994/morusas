@@ -1,15 +1,22 @@
-
-#video__presentacion iframe{
+#video__presentacion iframe {
     justify-content: center;
 }
-    
 
 .integrantes {
     font-size: 70%;
-   .btn img{
+    .btn img {
         width: 30px;
-        border: solid red .2px ;
-        
-       
+        border: solid red .2px;
+    }
+}
+
+#montañas {
+    justify-content: center;
+    text-align: center;
+    tr td {
+        border: black solid;
+    }
+    th {
+        border: black solid;
     }
 }
